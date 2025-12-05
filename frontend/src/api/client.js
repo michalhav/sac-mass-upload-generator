@@ -24,10 +24,10 @@ error => {
 
 export default {
 // Projects
-getProjects: () => api.get('/projects'),
-createProject: (name) => api.post('/projects', { name }),
-deleteProject: (name) => api.delete(`/projects/${name}`),
-getProject: (name) => api.get(`/projects/${name}`),
+getProjects: () => api.get('/api/projects'),
+createProject: (name) => api.post('/api/projects', { name }),
+deleteProject: (name) => api.delete(`/api/projects/${name}`),
+getProject: (name) => api.get(`/api/projects/${name}`),
 exportProject: (name) => `${RENDER_BASE_URL}/projects/${name}/export`, // Zde je /api nutné, pokud backend neodebírá prefix
 importProject: (file) => {
   const formData = new FormData()
@@ -38,8 +38,8 @@ importProject: (file) => {
 },
 
 // Settings
-getSettings: (project) => api.get(`/projects/${project}/settings`),
-saveSettings: (project, data) => api.put(`/projects/${project}/settings`, data),
+getSettings: (project) => api.get(`/api/projects/${project}/settings`),
+saveSettings: (project, data) => api.put(`/api/projects/${project}/settings`, data),
 
 // Dimensions
 getDimensions: (project) => api.get(`/projects/${project}/dimensions`),
@@ -77,5 +77,5 @@ downloadUrl: (project, filename) => `${RENDER_BASE_URL}/projects/${project}/down
 validate: (project) => api.get(`/projects/${project}/validate`),
 
 // Health
-health: () => api.get('/health')
+health: () => api.get('/api/health')
 }
