@@ -53,6 +53,10 @@ logger = setup_logging()
 app = Flask(__name__)
 CORS(app)  # Enable CORS for Vue frontend
 
+VERCEL_ORIGIN = "https://template-generator-gamma.vercel.app"
+
+CORS(app, resources={r"/*": {"origins": [VERCEL_ORIGIN, "http://localhost:3000"]}})
+
 # Configuration
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECTS_DIR = os.path.join(BASE_DIR, "projects")
