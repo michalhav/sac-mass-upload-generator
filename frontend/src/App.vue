@@ -10,6 +10,8 @@ import {
   FileText, Rocket, Moon, Sun, Plus, Download, Upload, Trash2 
 } from 'lucide-vue-next'
 
+const RENDER_BASE_URL = 'https://sac-mass-upload-generator.onrender.com'
+
 const router = useRouter()
 const store = useProjectStore()
 const isDark = useDark()
@@ -54,8 +56,8 @@ async function handleDeleteProject() {
 }
 
 function handleExport() {
-  if (!store.currentProject) return
-  window.open(`/api/projects/${store.currentProject}/export`, '_blank')
+  if (!store.currentProject) return
+  window.open(`${RENDER_BASE_URL}/api/projects/${store.currentProject}/export`, '_blank')
 }
 
 async function handleImport(event) {
