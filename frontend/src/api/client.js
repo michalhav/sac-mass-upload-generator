@@ -32,7 +32,7 @@ exportProject: (name) => `${RENDER_BASE_URL}/projects/${name}/export`, // Zde je
 importProject: (file) => {
   const formData = new FormData()
   formData.append('file', file)
-  return api.post('/projects/import', formData, {
+  return api.post('/api/projects/import', formData, {
     headers: { 'Content-Type': 'multipart/form-data' }
   })
 },
