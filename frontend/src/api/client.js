@@ -28,7 +28,7 @@ getProjects: () => api.get('/api/projects'),
 createProject: (name) => api.post('/api/projects', { name }),
 deleteProject: (name) => api.delete(`/api/projects/${name}`),
 getProject: (name) => api.get(`/api/projects/${name}`),
-exportProject: (name) => `${RENDER_BASE_URL}/projects/${name}/export`, // Zde je /api nutné, pokud backend neodebírá prefix
+exportProject: (name) => `${RENDER_BASE_URL}/api/projects/${name}/export`, // Zde je /api nutné, pokud backend neodebírá prefix
 importProject: (file) => {
   const formData = new FormData()
   formData.append('file', file)
