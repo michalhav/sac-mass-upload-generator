@@ -1,0 +1,16 @@
+{
+  "dimensions": [
+    {
+      "name": "Company Code",
+      "sac_name": "COL_Co_Code",
+      "table_name": "tbl_company",
+      "has_hierarchy": true
+    },
+    {
+      "name": "Segment",
+      "sac_name": "COL_Segment",
+      "table_name": "tbl_segment",
+      "has_hierarchy": true
+    }
+  ]
+}

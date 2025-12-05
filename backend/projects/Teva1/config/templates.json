@@ -1,0 +1,19 @@
+{
+  "templates": [
+    {
+      "name": "test",
+      "output_file": "test.xlsx",
+      "columns": [
+        "Company Code"
+      ]
+    },
+    {
+      "name": "testetest",
+      "output_file": "testetest.xlsx",
+      "columns": [
+        "Segment",
+        "Company Code"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    {
+      "name": "Segment",
+      "sac_name": "COL_Segment",
+      "table_name": "tbl_segment",
+      "has_hierarchy": true
+    }
+  ]
+}

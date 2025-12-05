@@ -1,0 +1,11 @@
+{
+  "templates": [
+    {
+      "name": "test",
+      "output_file": "test.xlsx",
+      "columns": [
+        "Segment"
+      ]
+    }
+  ]
+}

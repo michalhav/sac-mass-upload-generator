@@ -1,0 +1,24 @@
+{
+  "sac_connection": {
+    "base_url": "https://teva-test.eu20.analytics.cloud.sap",
+    "model_id": "C6ustb1qd2rgiicfcl8b6c6pa39",
+    "version_model_id": "C6ustb1qd2rgiicfcl8b6c6pa39"
+  },
+  "version": {
+    "version_id": "public.RF_CURRENT",
+    "start_column": "StartMonth",
+    "end_column": "EndMonth"
+  },
+  "date_range": {
+    "start_month": "",
+    "end_month": ""
+  },
+  "settings": {
+    "data_rows": 200
+  },
+  "colors": {
+    "dim_header": "#c6e0b4",
+    "date_header": "#8cb4d4",
+    "dim_cell": "#e2efda"
+  }
+}

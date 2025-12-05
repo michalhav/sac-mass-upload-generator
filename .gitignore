@@ -1,0 +1,9 @@
+# Ignorovat složky generované Node.js
+**/node_modules
+# Ignorovat vygenerované buildy z Vite/Vue
+**/dist
+# Ignorovat cache Pythonu a ostatní artefakty
+**/__pycache__
+*.pyc
+logs
+output
